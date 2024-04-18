@@ -1,0 +1,153 @@
+:root {
+    --c1: #fca809; /*Orange Color*/
+    --c2: #fdea0a; /*Yellow Color*/
+    --c3: #0973fb; /*Text Colors*/
+    --c4: #848485; /*Small Text Colors*/
+    --c6: #0973fb42; /*Background Color*/ 
+    
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--c6);
+
+}
+.header img {
+    width: 8rem;
+    height: 6rem;
+}
+
+.nav-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.nav-top li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.nav-top a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--c3);
+    font-weight: bold;
+    transition: 250ms ease-in;
+}
+
+.nav-top a:hover {
+    text-decoration: underline;
+    color: var(--c1);
+}
+
+/* Top Picture Section */
+.section-1 {
+    display: flex;
+    background-color: var(--c6);
+}
+
+.text-left {
+    text-align: left;
+    margin-left: 15rem;
+}
+
+.p1 {
+    color: var(--c1);
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: Roboto, sans-serif;
+    margin: 1rem 0 ;
+
+}
+
+.h1 {
+    color: var(--c3);
+    font-size: 2rem;
+    font-weight: bold;
+    /* font-family: ; */
+    margin: 0 0 1rem 0;
+}
+
+.p2 {
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: var(--c4);
+}
+
+.btn {
+    background-color: var(--c2);
+    color: var(--c3);
+    outline: none;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Roboto, sans-serif;
+    transition: 500ms ease-in;
+    border-radius: 0.5rem;
+}
+
+.btn:hover {
+    background-color: var(--c1);
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-center {
+    width: 40%;
+    text-align: center;
+}
+
+/* Card Section */
+
+.container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--c6);
+    border: 2px solid var(--c4);
+    border-radius: 1rem;
+}
+
+.card .card-img {
+    margin-right: 1rem;
+    border-right: 2px solid var(--c4);
+    padding: 0.5rem;
+
+}
+
+.card .card-img img {
+    width: 5rem;
+}
+
+.card .card-text {
+    padding: 1rem;
+    width: 10rem;
+}
+
+
+/* Bottom Big Company Link */
+.list {
+    display: flex;
+    flex-direction: row;
+    
+}
